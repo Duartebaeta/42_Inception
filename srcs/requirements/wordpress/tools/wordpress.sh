@@ -15,7 +15,7 @@ else
 fi
 
 # Always activate the desired theme
-THEME="astra"  # Change this to your desired theme
+THEME="astra"
 if ! wp theme is-installed $THEME --allow-root; then
     wp theme install $THEME --activate --allow-root
 else

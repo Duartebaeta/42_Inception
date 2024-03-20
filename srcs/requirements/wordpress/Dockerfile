@@ -19,6 +19,8 @@ RUN sed -i 's+listen = /run/php/php7.4-fpm.sock+listen = 9000+g' /etc/php/7.4/fp
 
 # Copy script into container
 COPY ./tools/wordpress.sh /tmp/wordpress.sh
+
+# Make sure script is executable
 RUN chmod +x /tmp/wordpress.sh
 
 # Make container listen on port 9000
